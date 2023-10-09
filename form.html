@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- ctrl + spasi penting untuk mengetahui apa saja fitur yang di sediakan vscode -->
+
+<body>
+
+    <!-- label jangan sampai salah ngisi for harus di isi id yang tepat kalau enggak karena label nya bisa di klik kalo salah jadi gak bisa di klik atau jadi salah sasaran  -->
+    
+    <!-- bisa di isi dengan fungsi checked disabled readonly dan maxlength contoh pengisian <form action="tujuan.html" method="post" disabled/ checked="check"/ readonly dan maxlength="5(berarti cuman bisa 5 karakter)"> -->
+
+    <!-- beda nya disabled dan readonly kalau disabled sepenuhnya gak bisa di pakai dan data nya jadi null tidak terisi kalau readonly bisa di tambahkan value jadi apa saja dan data nya jadi apa yang di isi di value contoh <form action="tujuan.html" method="post" value="aj" readonly> -->
+
+    <form action="tujuan.html" method="post">
+
+        <!-- untuk method nya ada post dan get -->
+        <!-- untuk method "get" di tampilkan di url jadi untuk info penting seperti username dan password jangan pake method get  -->
+
+        <label for="username">username</label><br>
+        <input type="text" name="username" id="username"><br><br>
+
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password"><br><br>
+
+        <label for="jeniskelamin">jenis kelamin</label><br>
+        <select name="jeniskelamin" id="jeniskelamin">
+            <option value="">pilih salah satu</option>
+            <option value="lakilaki">laki-laki</option>
+            <option value="perempuan">perempuan</option>
+        </select><br><br>
+
+        <!-- untuk radio name nya harus sama dengan kategori yang akan di isi supaya tidak error ke database  -->
+        <!-- pilihan checked di radio berfungsi untuk default pilih jadi gak kosong -->
+
+        <input type="radio" name="jeniskelamin" id="pria" value="pria">
+        <label for="pria">pria</label><br>
+        <input type="radio" name="jeniskelamin" id="wanita">
+        <label for="wanita">wanita</label><br>
+
+        <!-- untuk text area col adalah tinggi row adalah lebar -->
+
+        <textarea name="text" id="text" cols="30" rows="10">isi text disini</textarea><br><br>
+
+
+        <input type="submit" value="kirim">
+        
+    </form>
+</body>
+</html>
